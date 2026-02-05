@@ -40,10 +40,10 @@ After building, find distributions at:
 
 ### Execution
 
-* `mvn clean install` - Full build including documentation, automatic QA, checkstyle and all maven managed tests. Excludes just Ant and TCK tests. Typical time: 15 minutes.
+* `mvn clean install` - Full build including documentation, automatic QA, checkstyle and all maven managed tests. Excludes just Ant and TCK tests. Typical time: 20 minutes.
 * `mvn clean install -Pqa` - Building all distribution artifacts, running QA, checkstyle and all maven managed tests. Excludes Ant, TCK and documentation. Typical time: 10 minutes.
 * `mvn clean install -Pfast` - Building all distribution artifacts, running just unit tests. Excludes QA, checkstyle, integration tests, Ant, TCK and documentation. Typical time: 7 minutes.
-* `mvn clean install -Pfastest -T4C` - Building all distribution artifacts as fast as possible. Excludes everything not serving this purpose. Typical time: 1.5 minutes.
+* `mvn clean install -Pfastest -T4C` - Building all distribution artifacts as fast as possible. Excludes everything not serving this purpose. Typical time: 1 minute.
 
 After the build, you can run GlassFish in the following ways:
 * Run GlassFish server directly: Navigate to `appserver/distributions/glassfish/target/stage/glassfish8` - it is an unpacked version of GlassFish Full. Then you can run it as usual, e.g. with `bin/startserv`
