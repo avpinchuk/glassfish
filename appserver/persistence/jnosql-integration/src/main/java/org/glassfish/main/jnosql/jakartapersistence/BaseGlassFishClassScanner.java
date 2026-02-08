@@ -145,10 +145,6 @@ abstract public class BaseGlassFishClassScanner {
         return !isSupportedStandardInterface(intfModel);
     }
 
-    private boolean isDataRepositoryInterface(GeneralInterfaceModel interf) {
-        return interf.interfaceName().equals(DataRepository.class.getName());
-    }
-
     private static final Set<String> STANDARD_INTERFACES = Set.of(
             BasicRepository.class.getName(),
             CrudRepository.class.getName(),
